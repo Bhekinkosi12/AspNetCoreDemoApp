@@ -10,6 +10,7 @@ namespace AspNetCoreDemoApp.Controllers
 	{
 		// GET: api/values
 		[HttpGet]
+                
 		public IEnumerable<string> Get()
 		{
 		    Console.WriteLine(Request.GetDisplayUrl());
@@ -20,6 +21,7 @@ namespace AspNetCoreDemoApp.Controllers
 
 		// GET api/values/5
 		[HttpGet("{id}")]
+                
 		public string Get(int id)
 		{
 			return "value";
